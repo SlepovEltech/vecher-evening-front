@@ -1,32 +1,37 @@
 <template>
+
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="bg"></div>
+    <div class="content">
+      <div class="container">
+        <router-view/>
+      </div>
     </div>
-    <router-view/>
+
+
   </div>
 </template>
 
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import "~materialize-css/dist/css/materialize.min.css";
 
-#nav {
-  padding: 30px;
+  .bg {
+    position: absolute;
+    z-index: 1;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    filter: blur(8px);
+    background-image: url(assets/bg.jpeg);
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
   }
-}
+
+  .content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
 </style>
