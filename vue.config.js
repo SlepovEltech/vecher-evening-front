@@ -1,6 +1,5 @@
 module.exports = {
-    devServer: {
-        proxy: 'http://localhost:8080/api',
-        port: 8081
-    }
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/vecher-evening-front/'
+        : '/'
 }
