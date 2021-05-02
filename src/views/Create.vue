@@ -43,7 +43,7 @@
           <button class="btn btn-primary amber darken-3" type="submit">Зарегистрироваться</button>
 
         </form>
-<!--      <button class="btn col s7 offset-s2 amber darken-3" @click="test" >ПОКАЗАТЬ</button>-->
+<      <button class="btn btn-primary amber darken-3" @click="test" >ПОКАЗАТЬ</button>
 
     </div>
     </div>
@@ -91,7 +91,7 @@ export default {
 
     },
     test(){
-
+      this.$router.push({name: 'list'});
     },
 
   },
