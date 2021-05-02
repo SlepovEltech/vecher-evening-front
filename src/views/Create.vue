@@ -43,7 +43,8 @@
           <button class="btn btn-primary amber darken-3" type="submit">Зарегистрироваться</button>
 
         </form>
-<      <button class="btn btn-primary amber darken-3" @click="test" >ПОКАЗАТЬ</button>
+      <br>
+       <button class="btn btn-primary amber darken-3" @click="test" >ПОКАЗАТЬ</button>
 
     </div>
     </div>
